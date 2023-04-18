@@ -10,7 +10,8 @@ For example, assume we are implementing :manpage:`sched_setaffinity(2)`. You
 must add the prototype of the function implementing it to
 :file:`libos_table.h`::
 
-   long libos_syscall_sched_setaffinity(pid_t pid, unsigned int len, unsigned long* user_mask_ptr);
+   long libos_syscall_sched_setaffinity(pid_t pid, unsigned int len, unsigned
+   long* user_mask_ptr);
 
 Note that we use the following naming convetion: ``libos_syscall_`` followed by
 an actual syscall name. Additionally this function should return ``long``.
@@ -27,7 +28,8 @@ source file or any existing source file in :file:`libos/src/sys`.
 
 For example, in :file:`libos/src/sys/libos_sched.c`::
 
-   long libos_syscall_sched_setaffinity(pid_t pid, unsigned int len, unsigned long* user_mask_ptr) {
+   long libos_syscall_sched_setaffinity(pid_t pid, unsigned int len, unsigned
+   long* user_mask_ptr) {
       /* code for implementing the semantics of sched_setaffinity */
    }
 

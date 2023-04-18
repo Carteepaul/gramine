@@ -3,29 +3,35 @@ PAL host ABI
 
 TODO: This document is outdated and needs a proper review.
 
-PAL Host ABI is the interface used by Gramine to interact with its host. It is translated into
-the host's native ABI (e.g. system calls for UNIX) by a layer called the Platform Adaptation Layer
-(PAL). A PAL not only exports a set of APIs (PAL APIs) that can be called by the library OS, but
-also acts as the loader that bootstraps the library OS. The design of PAL Host ABI strictly follows
+PAL Host ABI is the interface used by Gramine to interact with its host. It is
+translated into
+the host's native ABI (e.g. system calls for UNIX) by a layer called the
+Platform Adaptation Layer
+(PAL). A PAL not only exports a set of APIs (PAL APIs) that can be called by
+the library OS, but
+also acts as the loader that bootstraps the library OS. The design of PAL Host
+ABI strictly follows
 three primary principles, to guarantee functionality, security, and portability:
 
 * The host ABI must be stateless.
 * The host ABI must be a narrowed interface to reduce the attack surface.
-* The host ABI must be generic and independent from the native ABI of any of the supported hosts.
+* The host ABI must be generic and independent from the native ABI of any of
+the supported hosts.
 
 Most of the PAL Host ABI is adapted from the Drawbridge library OS.
 
 PAL as loader
 -------------
 
-Regardless of the actual implementation, we require PAL to be able to load ELF-format binaries
-as executables or dynamic libraries and perform the necessary dynamic relocation. PAL needs
-to look up all unresolved symbols in loaded binaries and resolve the ones matching the names of
-PAL APIs. PAL does not and will not resolve other unresolved symbols, so the loaded libraries and
+Regardless of the actual implementation, we require PAL to be able to load
+ELF-format binaries as executables or dynamic libraries and perform the
+necessary dynamic relocation. PAL needs to look up all unresolved symbols in
+loaded binaries and resolve the ones matching the names of PAL APIs. PAL does
+not and will not resolve other unresolved symbols, so the loaded libraries and
 executables must resolve them afterwards.
 
-After loading the binaries, PAL needs to load and interpret the manifest files. The manifest syntax
-is described in :doc:`../manifest-syntax`.
+After loading the binaries, PAL needs to load and interpret the manifest files.
+The manifest syntax is described in :doc:`../manifest-syntax`.
 
 Manifest and executable loading
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

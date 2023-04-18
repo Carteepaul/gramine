@@ -30,8 +30,10 @@ To create a |~| signed SIGSTRUCT file from a manifest::
     from graminelibos import get_tbssigstruct, sign_with_local_key
 
     today = datetime.date.today()
-    # Manifest must be ready for signing, e.g. all trusted files must be already expanded.
-    sigstruct = get_tbssigstruct('path_to_manifest', today, 'optional_path_to_libpal')
+    # Manifest must be ready for signing, e.g. all trusted files must be
+    already expanded.
+    sigstruct = get_tbssigstruct('path_to_manifest', today,
+    'optional_path_to_libpal')
     sigstruct.sign(sign_with_local_key, 'path_to_private_key')
 
     with open('path_to_sigstruct', 'wb') as f:

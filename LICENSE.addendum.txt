@@ -4,7 +4,8 @@ Gramine also includes the following third party sources (and licenses):
 
 mbedtls crypto libraries - Apache 2.0
 
-Internet Software Consortium (permissive license): common/src/network/inet_pton.c
+Internet Software Consortium (permissive license): common/src/network/inet_pton.
+c
 
 cJSON - MIT
 tomlc99 - MIT
@@ -15,7 +16,8 @@ A number of files taken from other C libraries:
 * glibc - LGPL
  ** pal/include/elf/elf.h
  ** common/src/network/hton.c
- ** pal/include/arch/x86_64/linux/ - whole directory - for signal API definitions
+ ** pal/include/arch/x86_64/linux/ - whole directory - for signal API
+ definitions
  ** We also build a patched glibc
 
 * musl - MIT

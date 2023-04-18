@@ -413,7 +413,8 @@ Secret Provisioning is shipped as three libraries: ``secret_prov_attest.so``,
 EPID based ``secret_prov_verify_epid.so`` and DCAP/ECDSA based
 ``secret_prov_verify_dcap.so``.
 
-The examples of using RA-TLS can be found under ``CI-Examples/ra-tls-secret-prov``.
+The examples of using RA-TLS can be found under ``CI-Examples/
+ra-tls-secret-prov``.
 The examples include minimalistic provisioning of constant-string secrets as
 well as provisioning of an encryption key and its later use for encrypted files.
 

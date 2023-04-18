@@ -13,7 +13,8 @@ Glossary
 
       .. seealso::
 
-         https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/asplos2011-drawbridge.pdf
+         https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/
+         asplos2011-drawbridge.pdf
 
       Whenever Gramine requires a service from the host platform (memory
       allocation, thread management and synchronization, file system and network

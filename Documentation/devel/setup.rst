@@ -18,7 +18,8 @@ or place in :file:`~/.vim/after/ftplugin/c.vim` if you have other plugins.
 .. code-block:: vim
 
    let dirname = expand('%:p:h')
-   let giturl = system('cd '.dirname.'; git config --get remote.origin.url 2>/dev/null')
+   let giturl = system('cd '.dirname.'; git config --get remote.origin.url 2>/
+   dev/null')
    if giturl =~ 'gramineproject/gramine'
       set textwidth=100 tabstop=4 softtabstop=4 shiftwidth=4 expandtab
    endif

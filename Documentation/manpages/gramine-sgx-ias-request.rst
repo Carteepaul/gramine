@@ -103,7 +103,8 @@ Examples
 
 .. code-block:: sh
 
-    $ gramine-sgx-ias-request report -k $IAS_API_KEY -q gr.quote -r ias.report -s ias.sig -c ias.cert -v
+    $ gramine-sgx-ias-request report -k $IAS_API_KEY -q gr.quote -r ias.report
+     -s ias.sig -c ias.cert -v
     Verbose output enabled
     IAS request:
     {"isvEnclaveQuote":"AgABAO8..."}
@@ -115,4 +116,6 @@ Examples
     IAS submission successful
 
     $ cat ias.report
-    {"id":"205146415611480061439763344693868541328","timestamp":"2020-03-20T10:48:32.353294","version":3,"epidPseudonym":"Itmg0 [...]","isvEnclaveQuoteStatus":"GROUP_OUT_OF_DATE" [...]}
+    {"id":"205146415611480061439763344693868541328",
+    "timestamp":"2020-03-20T10:48:32.353294","version":3,"epidPseudonym":"Itmg0
+    [...]","isvEnclaveQuoteStatus":"GROUP_OUT_OF_DATE" [...]}

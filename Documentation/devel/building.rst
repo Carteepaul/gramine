@@ -253,8 +253,8 @@ Additional build options
 
   .. _POSIX.1-2018 8.3: https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap08.html#tag_08_03
 
-  This very much depends on a particular distribution, so please consult relevant
-  documentation provided by your distro.
+  This very much depends on a particular distribution, so please consult
+  relevant documentation provided by your distro.
 
 - To compile a patched version of GCC's OpenMP library (``libgomp``), install
   GCC's build prerequisites (see :ref:`common-dependencies`), and use
@@ -271,15 +271,20 @@ Additional build options
 Prepare a signing key
 ---------------------
 
-These instructions are only required for systems using Intel® SGX that have not already created a signing key.
+These instructions are only required for systems using Intel® SGX that have not
+already created a signing key.
 
    - If your system is not using Intel® SGX, skip this step.
 
-   - If your system is using Intel® SGX and you already created a signing key, skip this step.
+   - If your system is using Intel® SGX and you already created a signing key,
+   - skip this step.
 
-   - If your system is using Intel® SGX and have not created a signing key, follow the instructions below.
+   - If your system is using Intel® SGX and have not created a signing key,
+   - follow the instructions below.
 
-The following command generates an |~| RSA 3072 key suitable for signing SGX enclaves and stores it in :file:`{HOME}/.config/gramine/enclave-key.pem`. Protect this key and do not disclose it to anyone::
+The following command generates an |~| RSA 3072 key suitable for signing SGX
+enclaves and stores it in :file:`{HOME}/.config/gramine/enclave-key.pem`.
+Protect this key and do not disclose it to anyone::
 
    gramine-sgx-gen-private-key
 
@@ -366,7 +371,8 @@ benefits, see `this discussion <https://lwn.net/Articles/821719>`__.
 FSGSBASE patchset was merged in Linux kernel version 5.9, so if your kernel
 version is 5.9 or higher, then the FSGSBASE feature is already supported and you
 can skip this step. For older kernels it is available as `separate patches
-<https://github.com/oscarlab/graphene-sgx-driver/tree/master/fsgsbase_patches>`__.
+<https://github.com/oscarlab/graphene-sgx-driver/tree/master/
+fsgsbase_patches>`__.
 
 (Note that Gramine was prevously called *Graphene* and was hosted under
 a different organization, hence the name of the linked repository.)

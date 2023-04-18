@@ -12,7 +12,8 @@ quickly test Gramine with your applications and workloads. This image can also
 be used as a base for your workflows to produce production-ready Docker images
 for your SGX applications.
 
-The Gramine team publishes a base Gramine Docker image at: `DockerHub <https://hub.docker.com/r/gramineproject/gramine>`_.
+The Gramine team publishes a base Gramine Docker image at:
+ `DockerHub <https://hub.docker.com/r/gramineproject/gramine>`_.
 
 To run the Gramine image via Docker, the recommended command is::
 
@@ -26,7 +27,8 @@ profile using:
 
 You can download the profile file from:
 
-https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.json.
+https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.
+json.
 
 Alternatively you can disable seccomp completely
 

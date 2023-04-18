@@ -20,7 +20,8 @@ exponent equal to 3.
 The default path is ``$XDG_CONFIG_HOME/gramine/enclave-key.pem`` (which is
 usually ``$HOME/.config/gramine/enclave-key.pem`` — see `XDG Base Directory
 Specification
-<https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`__
+<https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.
+html>`__
 for details). You can specify an alternative path as an argument.
 
 Command line arguments

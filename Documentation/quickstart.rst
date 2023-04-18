@@ -29,18 +29,23 @@ Debian 11
    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/intel-sgx-deb.asc] https://download.01.org/intel-sgx/sgx_repo/ubuntu focal main" \
    | sudo tee /etc/apt/sources.list.d/intel-sgx.list
 
+   sudo apt-get update
    sudo apt-get install gramine
 
 Ubuntu 22.04 LTS, 20.04 LTS or 18.04 LTS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
-   sudo curl -fsSLo /usr/share/keyrings/gramine-keyring.gpg https://packages.gramineproject.io/gramine-keyring.gpg
-   echo "deb [arch=amd64 signed-by=/usr/share/keyrings/gramine-keyring.gpg] https://packages.gramineproject.io/ $(lsb_release -sc) main" \
+   sudo curl -fsSLo /usr/share/keyrings/gramine-keyring.gpg https://packages.
+   gramineproject.io/gramine-keyring.gpg
+   echo "deb [arch=amd64 signed-by=/usr/share/keyrings/gramine-keyring.gpg]
+   https://packages.gramineproject.io/ $(lsb_release -sc) main" \
    | sudo tee /etc/apt/sources.list.d/gramine.list
 
-   sudo curl -fsSLo /usr/share/keyrings/intel-sgx-deb.asc https://download.01.org/intel-sgx/sgx_repo/ubuntu/intel-sgx-deb.key
-   echo "deb [arch=amd64 signed-by=/usr/share/keyrings/intel-sgx-deb.asc] https://download.01.org/intel-sgx/sgx_repo/ubuntu $(lsb_release -sc) main" \
+   sudo curl -fsSLo /usr/share/keyrings/intel-sgx-deb.asc https://download.01.
+   org/intel-sgx/sgx_repo/ubuntu/intel-sgx-deb.key
+   echo "deb [arch=amd64 signed-by=/usr/share/keyrings/intel-sgx-deb.asc]
+   https://download.01.org/intel-sgx/sgx_repo/ubuntu $(lsb_release -sc) main" \
    | sudo tee /etc/apt/sources.list.d/intel-sgx.list
 
    sudo apt-get update
@@ -57,5 +62,6 @@ RHEL-like distributions version 8 (and experimentally also version 9)
 
 2. Install Gramine::
 
-      sudo curl -fsSLo /etc/yum.repos.d/gramine.repo https://packages.gramineproject.io/rpm/gramine.repo
+      sudo curl -fsSLo /etc/yum.repos.d/gramine.repo https://packages.
+      gramineproject.io/rpm/gramine.repo
       sudo dnf install gramine

@@ -71,7 +71,8 @@ programming. We recommend the following books and resources:
   - "Structured Computer Organization" by A. Tanenbaum
   - The latest revision of "Intel 64 and IA-32 Architectures Software
     Developer’s Manual", you can download it from
-    https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+    https://www.intel.com/content/www/us/en/developer/articles/technical/
+    intel-sdm.html
 
 To meaningfully contribute to Gramine, the developer is expected to have a
 decent level of understanding of the concepts involved in any given subsystem of
@@ -123,7 +124,8 @@ development tools and flows adopted by the Gramine community:
 
   - https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---signoff
   - https://developercertificate.org/
-  - https://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for
+  - https://stackoverflow.com/questions/1962094/
+  - what-is-the-sign-off-feature-in-git-for
 
 - GitHub -- all Gramine repositories are hosted on the GitHub web-site
 
@@ -483,7 +485,8 @@ fine on native Linux but fails under Gramine::
    review comments and to reply. **Do not use GitHub review interface**.
 
    - Depending on the complexity of your bug fix and the current load of
-     maintainers, the first reviews may come in 1 to 14 days. Please keep in mind
+     maintainers, the first reviews may come in 1 to 14 days. Please keep in
+     mind
      that the review process is long and tedious (as a relevant example, some
      patches to Linux may take several years to be merged). The Gramine
      community focuses on quality and security rather than speed of development,

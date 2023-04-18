@@ -37,8 +37,10 @@ Example
 .. code-block:: sh
 
    $ gramine-sgx-sigstruct-view --verbose --output-format=toml helloworld.sig
-   mr_signer = "0dedbe47afb6955e5f6109637c1fbd9cc4b4e073e1396da8ce2091075e5b0a3b"
-   mr_enclave = "81a675e9a408818b430be4b259f3e11e6f8cacdb4c971c3114ee79fe53076893"
+   mr_signer =
+   "0dedbe47afb6955e5f6109637c1fbd9cc4b4e073e1396da8ce2091075e5b0a3b"
+   mr_enclave =
+   "81a675e9a408818b430be4b259f3e11e6f8cacdb4c971c3114ee79fe53076893"
    isv_prod_id = 0
    isv_svn = 0
    attribute_flags = "0x6"

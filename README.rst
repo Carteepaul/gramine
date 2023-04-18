@@ -8,7 +8,8 @@ Gramine Library OS with Intel SGX Support
 
 *A Linux-compatible Library OS for Multi-Process Applications*
 
-.. This is not |~|, because that is in rst_prolog in conf.py, which GitHub cannot parse.
+.. This is not |~|, because that is in rst_prolog in conf.py, which GitHub
+scannot parse.
    GitHub doesn't appear to use it correctly anyway...
 .. |nbsp| unicode:: 0xa0
    :trim:

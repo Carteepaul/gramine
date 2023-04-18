@@ -641,8 +641,10 @@ Attribute masks for SGX sealing key derivation
 
 ::
 
-    sgx.seal_key.flags_mask = "[8-byte hex value]"  (default: "0xffffffffffffffff")
-    sgx.seal_key.xfrm_mask  = "[8-byte hex value]"  (default: "0xfffffffffff9ff1b")
+    sgx.seal_key.flags_mask = "[8-byte hex value]"  (default:
+    "0xffffffffffffffff")
+    sgx.seal_key.xfrm_mask  = "[8-byte hex value]"  (default:
+    "0xfffffffffff9ff1b")
     sgx.seal_key.misc_mask  = "[4-byte hex value]"  (default: "0xffffffff")
 
 This syntax specifies masks used to generate the SGX sealing key. These masks
@@ -715,7 +717,8 @@ Encrypted files
 ::
 
     fs.mounts = [
-      { type = "encrypted", path = "[PATH]", uri = "[URI]", key_name = "[KEY_NAME]" },
+      { type = "encrypted", path = "[PATH]", uri = "[URI]", key_name = "
+      [KEY_NAME]" },
     ]
 
     fs.insecure__keys.[KEY_NAME] = "[32-character hex value]"
@@ -964,6 +967,19 @@ See :ref:`vtune-sgx-profiling` for more information.
 Deprecated options
 ------------------
 
+FS mount points (deprecated syntax)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   fs.mount.[identifier].type = "[chroot|...]"
+   fs.mount.[identifier].path = "[PATH]"
+   fs.mount.[identifier].uri  = "[URI]"
+
+This syntax used a TOML table schema with keys for each mount. It has been
+replaced with the ``fs.mounts`` TOML array.
+
+
 Experimental sysfs topology support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -972,6 +988,44 @@ Experimental sysfs topology support
     fs.experimental__enable_sysfs_topology = [true|false]
 
 This feature is now enabled by default and the option was removed.
+
+Protected files (deprecated syntax)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+    sgx.protected_files = [
+      "[URI]",
+      "[URI]",
+    ]
+
+    sgx.protected_mrenclave_files = [
+      "[URI]",
+      "[URI]",
+    ]
+
+    sgx.protected_mrsigner_files = [
+      "[URI]",
+      "[URI]",
+    ]
+
+This syntax specified the previous SGX-only protected files. It has been
+replaced with ``type = "encrypted"`` mounts (see :ref:`encrypted-files`).
+
+.. warning::
+   Gramine will attempt to convert this syntax to mounted filesystems, but might
+   fail to do so correctly in more complicated cases (e.g. when a single host
+   file belongs to multiple mounts). It is recommended to rewrite all usages of
+   this syntax to ``type = "encrypted"`` mounts.
+
+::
+
+   fs.insecure__protected_files_key = "[32-character hex value]"
+
+This syntax allowed specifying the default encryption key for protected files.
+It has been replaced by ``fs.insecure__keys.[KEY_NAME]]``. Note that both old
+and new syntax are suitable for debugging purposes only.
+
 
 Attestation and quotes (deprecated syntax)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

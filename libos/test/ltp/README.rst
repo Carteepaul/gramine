@@ -68,7 +68,8 @@ global options.
 
 Global options:
 - ``sgx``: if true-ish, run under SGX (default: false)
-- ``jobs``: run that many tests in parallel (default is 1 under SGX and number of
+- ``jobs``: run that many tests in parallel (default is 1 under SGX and number
+- of
   CPUs otherwise); **WARNING:** Because EPC has limited size, test suite may
   become unstable if more than one test is running concurrently under SGX
 - ``junit-classname``: classname to be shown in JUnit-XML report (``LTP``)

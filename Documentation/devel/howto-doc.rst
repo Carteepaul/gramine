@@ -28,7 +28,8 @@ not published.
    A |~| note about terminology:
 
    ``html``, ``latex`` and ``manpage``, and also others, are Sphinx "builders":
-   https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-b.
+   https://www.sphinx-doc.org/en/master/man/sphinx-build.
+   html#cmdoption-sphinx-build-b.
    Sphinx can output many different formats, some of them have overlapping usage
    (both ``html`` and ``latex`` usually output full handbook, the difference is
    screen vs print), some are specialized (``manpage`` processes only selected
@@ -41,9 +42,12 @@ not published.
 Building documentation
 ----------------------
 
-To build documentation, change directory to ``Documentation``, install prerequisites, and use
-``make``, specifying the appropriate target. The documentation is built with python3; if you have
-similar packages in python2, it may create problems; we recommend removing any similar packages in
+To build documentation, change directory to ``Documentation``, install
+prerequisites, and use
+``make``, specifying the appropriate target. The documentation is built with
+python3; if you have
+similar packages in python2, it may create problems; we recommend removing any
+similar packages in
 python2. Similarly, the documentation requires version 1.8 of sphinx.
 
 The output is in the ``_build`` directory:
@@ -162,10 +166,12 @@ Preferred Doxygen style
        * \param first   First addend.
        * \param second  Second addend.
        *
-       * \returns Sum of the arguments. Sometimes a longer description is needed, then it should be
+       * \returns Sum of the arguments. Sometimes a longer description is
+       * needed, then it should be
        *          wrapped and aligned like this.
        *
-       * Longer description goes here (only for functions complex enough to deserve it).
+       * Longer description goes here (only for functions complex enough to
+       * deserve it).
        */
       int foo(int first, int second) {
           return first + second;
@@ -208,11 +214,13 @@ Further reading
 
 .. _reStructuredText: https://en.wikipedia.org/wiki/ReStructuredText
 .. _Sphinx: https://www.sphinx-doc.org/
-.. _Sphinx' reST primer: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+.. _Sphinx' reST primer: https://www.sphinx-doc.org/en/master/usage/
+restructuredtext/basics.html
 .. _Doxygen: http://www.doxygen.nl/
 .. _Doxygen manual: http://www.doxygen.nl/manual/docblocks.html
 .. _Breathe: https://breathe.readthedocs.io/en/latest/
 .. _Breathe directives: https://breathe.readthedocs.io/en/latest/directives.html
 .. _Python's style guide: https://devguide.python.org/documenting/#style-guide
 .. _Four kinds of documentation: https://www.divio.com/blog/documentation/
-.. _The Hitchhiker's Guide to Documentation: https://docs-guide.readthedocs.io/en/latest/>
+.. _The Hitchhiker's Guide to Documentation: https://docs-guide.readthedocs.io/
+en/latest/>

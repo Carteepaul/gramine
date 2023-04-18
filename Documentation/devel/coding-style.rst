@@ -82,13 +82,18 @@ Code formatting
    Required only if the one-line version would exceed the line length limit.
    Examples::
 
-      int many_args(int something_looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong,
+      int many_args(int
+      something_looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong
+      ,
                     int also_looooooong,
                     int c);
       ...
-      many_args(some_looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong_calculations,
+      many_args
+      (some_looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong_cal
+      culations,
                 many_args(123,
-                          also_looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong,
+                          also_loooooooooooooooooooooooooooooooooooooooooooooooo
+                          ooooooooooooooooooong,
                           789),
                 many_args(1, 2, 3));
 

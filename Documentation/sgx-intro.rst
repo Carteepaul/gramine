@@ -3,7 +3,8 @@ Introduction to SGX
 
 .. highlight:: sh
 
-Gramine project uses :term:`SGX` to securely run software. Gramine supports running Linux applications using the :term:`Intel SGX <SGX>`
+Gramine project uses :term:`SGX` to securely run software. Gramine supports
+running Linux applications using the :term:`Intel SGX <SGX>`
 (Software Guard Extensions) technology (we sometimes call this version
 **Gramine-SGX**). With Intel SGX, applications are secured in
 hardware-encrypted memory regions (called SGX enclaves). SGX protects code and
@@ -50,31 +51,40 @@ Introductory reading
 - Quarkslab's two-part "Overview of Intel SGX":
 
   - `Part 1, SGX Internals (Quarkslab)
-    <https://blog.quarkslab.com/overview-of-intel-sgx-part-1-sgx-internals.html>`__
+    <https://blog.quarkslab.com/overview-of-intel-sgx-part-1-sgx-internals.
+    html>`__
   - `Part 2, SGX Externals (Quarkslab)
-    <https://blog.quarkslab.com/overview-of-intel-sgx-part-2-sgx-externals.html>`__
+    <https://blog.quarkslab.com/overview-of-intel-sgx-part-2-sgx-externals.
+    html>`__
 
 - `MIT's deep dive in SGX architecture <https://eprint.iacr.org/2016/086>`__.
 
 - Intel's whitepapers:
 
   - `Innovative Technology for CPU Based Attestation and Sealing
-    <https://software.intel.com/en-us/articles/innovative-technology-for-cpu-based-attestation-and-sealing>`__
+    <https://software.intel.com/en-us/articles/
+    innovative-technology-for-cpu-based-attestation-and-sealing>`__
   - `Innovative Instructions and Software Model for Isolated Execution
-    <https://software.intel.com/en-us/articles/innovative-instructions-and-software-model-for-isolated-execution>`__
-  - `Using Innovative Instructions to Create Trustworthy Software Solutions [PDF]
-    <https://software.intel.com/sites/default/files/article/413938/hasp-2013-innovative-instructions-for-trusted-solutions.pdf>`__
+    <https://software.intel.com/en-us/articles/
+    innovative-instructions-and-software-model-for-isolated-execution>`__
+  - `Using Innovative Instructions to Create Trustworthy Software Solutions
+   [PDF]
+    <https://software.intel.com/sites/default/files/article/413938/
+    hasp-2013-innovative-instructions-for-trusted-solutions.pdf>`__
   - `Slides from ISCA 2015 <https://sgxisca.weebly.com/>`__
-    (`actual slides [PDF] <https://software.intel.com/sites/default/files/332680-002.pdf>`__)
+    (`actual slides [PDF] <https://software.intel.com/sites/default/files/
+    332680-002.pdf>`__)
 
-- `Hardware compatibility list (unofficial) <https://github.com/ayeks/SGX-hardware>`__
+- `Hardware compatibility list (unofficial) <https://github.com/ayeks/
+SGX-hardware>`__
 
 Official Documentation
 ----------------------
 
 - `Intel® 64 and IA-32 Architectures Software Developer's Manual Volume 3D:
   System Programming Guide, Part 4
-  <https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-3d-part-4-manual.pdf>`__
+  <https://www.intel.com/content/dam/www/public/us/en/documents/manuals/
+  64-ia-32-architectures-software-developer-vol-3d-part-4-manual.pdf>`__
 - `SDK for Linux <https://01.org/intel-software-guard-extensions/downloads>`__
   (download of both the binaries and the documentation)
 
@@ -127,65 +137,93 @@ For historical reasons, there are three SGX drivers currently (January 2021):
 The chronicle of kernel patchset:
 
 v1 (2016-04-25)
-   https://lore.kernel.org/lkml/1461605698-12385-1-git-send-email-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/1461605698-12385-1-git-send-email-jarkko.
+   sakkinen@linux.intel.com/
 v2
    ?
 v3
    ?
 v4 (2017-10-16)
-   https://lore.kernel.org/lkml/20171016191855.16964-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20171016191855.16964-1-jarkko.sakkinen@linux.
+   intel.com/
 v5 (2017-11-13)
-   https://lore.kernel.org/lkml/20171113194528.28557-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20171113194528.28557-1-jarkko.sakkinen@linux.
+   intel.com/
 v6 (2017-11-25)
-   https://lore.kernel.org/lkml/20171125193132.24321-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20171125193132.24321-1-jarkko.sakkinen@linux.
+   intel.com/
 v7 (2017-12-07)
-   https://lore.kernel.org/lkml/20171207015614.7914-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20171207015614.7914-1-jarkko.sakkinen@linux.
+   intel.com/
 v8 (2017-12-15)
-   https://lore.kernel.org/lkml/20171215202936.28226-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20171215202936.28226-1-jarkko.sakkinen@linux
+   .intel.com/
 v9 (2017-12-16)
-   https://lore.kernel.org/lkml/20171216162200.20243-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20171216162200.20243-1-jarkko.sakkinen@linux.
+   intel.com/
 v10 (2017-12-24)
-   https://lore.kernel.org/lkml/20171224195854.2291-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20171224195854.2291-1-jarkko.sakkinen@linux.
+   intel.com/
 v11 (2018-06-08)
-   https://lore.kernel.org/lkml/20180608171216.26521-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20180608171216.26521-1-jarkko.sakkinen@linux.
+   intel.com/
 v12 (2018-07-03)
-   https://lore.kernel.org/lkml/20180703182118.15024-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20180703182118.15024-1-jarkko.sakkinen@linux.
+   intel.com/
 v13 (2018-08-27)
-   https://lore.kernel.org/lkml/20180827185507.17087-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20180827185507.17087-1-jarkko.sakkinen@linux.
+   intel.com/
 v14 (2018-09-25)
-   https://lore.kernel.org/lkml/20180925130845.9962-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20180925130845.9962-1-jarkko.sakkinen@linux.
+   intel.com/
 v15 (2018-11-03)
-   https://lore.kernel.org/lkml/20181102231320.29164-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20181102231320.29164-1-jarkko.sakkinen@linux.
+   intel.com/
 v16 (2018-11-06)
-   https://lore.kernel.org/lkml/20181106134758.10572-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20181106134758.10572-1-jarkko.sakkinen@linux.
+
 v17 (2018-11-16)
-   https://lore.kernel.org/lkml/20181116010412.23967-2-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20181116010412.23967-2-jarkko.sakkinen@linux.
+   intel.com/
 v18 (2018-12-22)
-   https://lore.kernel.org/linux-sgx/20181221231134.6011-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/linux-sgx/20181221231134.6011-1-jarkko.
+   sakkinen@linux.intel.com/
 v19 (2019-03-20)
-   https://lore.kernel.org/lkml/20190320162119.4469-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20190320162119.4469-1-jarkko.sakkinen@linux.
+   intel.com/
 v20 (2019-04-17)
-   https://lore.kernel.org/lkml/20190417103938.7762-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20190417103938.7762-1-jarkko.sakkinen@linux.
+   intel.com/
 v21 (2019-07-13)
-   https://lore.kernel.org/lkml/20190713170804.2340-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20190713170804.2340-1-jarkko.sakkinen@linux.
+   intel.com/
 v22 (2019-09-03)
-   https://lore.kernel.org/lkml/20190903142655.21943-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20190903142655.21943-1-jarkko.sakkinen@linux.
+   intel.com/
 v23 (2019-10-28)
-   https://lore.kernel.org/lkml/20191028210324.12475-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20191028210324.12475-1-jarkko.sakkinen@linux.
+   intel.com/
 v24 (2019-11-30)
-   https://lore.kernel.org/lkml/20191129231326.18076-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20191129231326.18076-1-jarkko.sakkinen@linux.
+   intel.com/
 v25 (2020-02-04)
-   https://lore.kernel.org/lkml/20200204060545.31729-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20200204060545.31729-1-jarkko.sakkinen@linux.
+   intel.com/
 v26 (2020-02-09)
-   https://lore.kernel.org/lkml/20200209212609.7928-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20200209212609.7928-1-jarkko.sakkinen@linux.
+   intel.com/
 v27 (2020-02-23)
-   https://lore.kernel.org/lkml/20200223172559.6912-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20200223172559.6912-1-jarkko.sakkinen@linux.
+   intel.com/
 v28 (2020-04-04)
-   https://lore.kernel.org/lkml/20200303233609.713348-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20200303233609.713348-1-jarkko.sakkinen@linux.
+   intel.com/
 v29 (2020-04-22)
-   https://lore.kernel.org/lkml/20200421215316.56503-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20200421215316.56503-1-jarkko.sakkinen@linux.
+   intel.com/
 v30 (2020-05-15)
-   https://lore.kernel.org/lkml/20200515004410.723949-1-jarkko.sakkinen@linux.intel.com/
+   https://lore.kernel.org/lkml/20200515004410.723949-1-jarkko.sakkinen@linux.
+   intel.com/
 
 SGX terminology
 ---------------
@@ -218,10 +256,11 @@ SGX terminology
    AESM
 
       The Architectural Enclave Service Manager is responsible for providing SGX
-      applications with access to the :term:`Architectural Enclaves`. It consists
-      of the Architectural Enclave Service Manager Daemon, which hosts the enclaves,
-      and a component of the SGX SDK, which communicates with the daemon over a Unix
-      socket with the fixed path :file:`/var/run/aesmd/aesm.sock`.
+      applications with access to the :term:`Architectural Enclaves`. It
+      consists of the Architectural Enclave Service Manager Daemon, which hosts
+      the enclaves, and a component of the SGX SDK, which communicates with
+      the daemon over a Unix socket with the fixed path
+      :file:`/var/run/aesmd/aesm.sock`.
 
    AEX
       .. todo:: TBD
@@ -271,7 +310,8 @@ SGX terminology
       .. seealso::
 
          Orientation Guide
-            https://download.01.org/intel-sgx/sgx-dcap/1.14/linux/docs/DCAP_ECDSA_Orientation.pdf
+            https://download.01.org/intel-sgx/sgx-dcap/1.14/linux/docs/
+            DCAP_ECDSA_Orientation.pdf
 
          :term:`EPID`
             A |~| way to launch enclaves with Intel's infrastructure, intended
@@ -331,8 +371,8 @@ SGX terminology
             infrastructure.
 
          :term:`SPID`
-            An identifier one can obtain from Intel, required to make use of EPID
-            attestation.
+            An identifier one can obtain from Intel, required to make use of
+            EPID attestation.
 
    Flexible Launch Control
    FLC
@@ -355,8 +395,8 @@ SGX terminology
 
       .. seealso::
 
-         https://software.intel.com/en-us/blogs/2018/12/09/an-update-on-3rd-party-attestation
-            Announcement
+         https://software.intel.com/en-us/blogs/2018/12/09/
+         an-update-on-3rd-party-attestation Announcement
 
          :term:`DCAP`
 
@@ -564,7 +604,8 @@ SGX terminology
 
    SGX Report
 
-      The SGX report is a data structure that contains the enclave's measurement,
+      The SGX report is a data structure that contains the enclave's
+      measurement,
       signer identity, attributes and a user-defined 64B string. The SGX report
       is generated using the ``EREPORT`` hardware instruction. It is used during
       :term:`Local Attestation`. The SGX report is embedded into the
@@ -585,7 +626,8 @@ SGX terminology
       obtain an |~| SPID through Intel's `Trusted Services Portal
       <https://api.portal.trustedservices.intel.com/EPID-attestation>`_.
 
-      See :term:`EPID` for a |~| description of the difference between *linkable*
+      See :term:`EPID` for a |~| description of the difference between
+      *linkable*
       and *unlinkable* quotes.
 
    State Save Area

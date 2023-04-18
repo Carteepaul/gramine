@@ -32,7 +32,8 @@ If you want to run :program:`gramine-direct` in addition to
 command:`gramine-sgx`, then you should run Docker with our custom seccomp
 profile using ``--security-opt seccomp=<profile_file>``. You can download the
 profile file from
-https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.json.
+https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.
+json.
 Alternatively you can disable seccomp completely (``--security-opt
 seccomp=unconfined``).
 

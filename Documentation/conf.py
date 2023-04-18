@@ -47,7 +47,6 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.todo',
     'sphinx_rtd_theme',
-    'sphinx.ext.autosectionlabel',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -189,16 +188,26 @@ html_static_path = ['_static']
 man_pages = [
     ('manpages/gramine', 'gramine-direct', 'Gramine', [author], 1),
     ('manpages/gramine', 'gramine-sgx', 'Gramine', [author], 1),
-    ('manpages/gramine-argv-serializer', 'gramine-argv-serializer', 'Serialize command line arguments', [author], 1),
-    ('manpages/gramine-manifest', 'gramine-manifest', 'Gramine manifest preprocessor', [author], 1),
-    ('manpages/gramine-sgx-gen-private-key', 'gramine-sgx-gen-private-key', 'Gramine SGX key generator', [author], 1),
-    ('manpages/gramine-sgx-get-token', 'gramine-sgx-get-token', 'Gramine SGX Token generator', [author], 1),
-    ('manpages/gramine-sgx-ias-request', 'gramine-sgx-ias-request', 'Submit Intel Attestation Service request', [author], 1),
-    ('manpages/gramine-sgx-ias-verify-report', 'gramine-sgx-ias-verify-report', 'Verify Intel Attestation Service report', [author], 1),
-    ('manpages/gramine-sgx-quote-view', 'gramine-sgx-quote-view', 'Display SGX quote', [author], 1),
-    ('manpages/gramine-sgx-sigstruct-view', 'gramine-sgx-sigstruct-view', 'Display SGX SIGSTRUCT', [author], 1),
-    ('manpages/gramine-sgx-sign', 'gramine-sgx-sign', 'Gramine SIGSTRUCT generator', [author], 1),
-    ('manpages/is-sgx-available', 'is-sgx-available', 'Check SGX compatibility', [author], 1),
+    ('manpages/gramine-argv-serializer', 'gramine-argv-serializer', 'Serialize
+    command line arguments', [author], 1),
+    ('manpages/gramine-manifest', 'gramine-manifest', 'Gramine manifest
+     preprocessor', [author], 1),
+    ('manpages/gramine-sgx-gen-private-key', 'gramine-sgx-gen-private-key',
+    'Gramine SGX key generator', [author], 1),
+    ('manpages/gramine-sgx-get-token', 'gramine-sgx-get-token', 'Gramine SGX
+    Token generator', [author], 1),
+    ('manpages/gramine-sgx-ias-request', 'gramine-sgx-ias-request', 'Submit
+    Intel Attestation Service request', [author], 1),
+    ('manpages/gramine-sgx-ias-verify-report', 'gramine-sgx-ias-verify-report',
+     'Verify Intel Attestation Service report', [author], 1),
+    ('manpages/gramine-sgx-quote-view', 'gramine-sgx-quote-view', 'Display SGX
+    quote', [author], 1),
+    ('manpages/gramine-sgx-sigstruct-view', 'gramine-sgx-sigstruct-view',
+     'Display SGX SIGSTRUCT', [author], 1),
+    ('manpages/gramine-sgx-sign', 'gramine-sgx-sign', 'Gramine SIGSTRUCT
+    generator', [author], 1),
+    ('manpages/is-sgx-available', 'is-sgx-available', 'Check SGX
+    compatibility', [author], 1),
 ]
 
 # barf if a page is not included
