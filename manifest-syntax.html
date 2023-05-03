@@ -303,7 +303,8 @@ of the three mutually exclusive options:</p>
 <li>point <code class="docutils literal notranslate"><span class="pre">loader.argv_src_file</span></code> to a file
 containing output of <a class="reference internal" href="manpages/gramine-argv-serializer.html#gramine-argv-serializer"><span class="std std-ref">gramine-argv-serializer</span></a>.</li>
 </ul>
-<p>If none of the above arguments-handling manifest options are specified in the manifest, the application will get <code class="docutils literal notranslate"><span class="pre">argv</span> <span class="pre">=</span> <span class="pre">[</span> <span class="pre">&lt;libos.entrypoint</span> <span class="pre">value&gt;</span> <span class="pre">]</span></code>.</p>
+<p>If none of the above arguments-handling manifest options are specified in the
+manifest, the application will get <code class="docutils literal notranslate"><span class="pre">argv</span> <span class="pre">=</span> <span class="pre">[</span> <span class="pre">&lt;libos.entrypoint</span> <span class="pre">value&gt;</span> <span class="pre">]</span></code>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">loader.argv_src_file</span></code> is intended to point to either a trusted file or an
 encrypted file. The former allows to securely hardcode arguments, the latter
 allows the arguments to be provided at runtime from an external (trusted)
@@ -334,7 +335,8 @@ set to the host’s hostname at initialization.</p>
 <li><code class="docutils literal notranslate"><span class="pre">options</span></code> [<code class="docutils literal notranslate"><span class="pre">edns0</span></code>] [<code class="docutils literal notranslate"><span class="pre">inet6</span></code>] [<code class="docutils literal notranslate"><span class="pre">rotate</span></code>] [<code class="docutils literal notranslate"><span class="pre">use-vc</span></code>]</li>
 </ul>
 </div></blockquote>
-<p>Unsupported keywords and malformed lines from <code class="docutils literal notranslate"><span class="pre">/etc/resolv.conf</span></code> are ignored.</p>
+<p>Unsupported keywords and malformed lines from <code class="docutils literal notranslate"><span class="pre">/etc/resolv.conf</span></code> are
+ignored.</p>
 </li>
 </ul>
 <p>The functionality is achieved by taking the host’s configuration via various
