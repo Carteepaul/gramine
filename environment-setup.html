@@ -215,18 +215,18 @@
 descriptions in <a class="reference internal" href="devel/building.html"><span class="doc">Build and install Gramine from source</span></a>.</p>
 <div class="section" id="check-for-sgx-compatibility">
 <h2>Check for SGX compatibility<a class="headerlink" href="#check-for-sgx-compatibility" title="Permalink to this headline">¶</a></h2>
-<p>We supply a tool, <a class="reference external" href="https://deb-intel.github.io/GramineTest/manpages/is-sgx-available.html">is-sgx-available</a>
-that checks the environment for SGX compatibility. Use this tool to check your
-hardware and system. It’s installed together with the respective gramine package</p>
-<blockquote>
-<div>you previously installed.</div></blockquote>
+<p>We supply a tool, <a class="reference internal" href="manpages/is-sgx-available.html"><span class="doc">is-sgx-available – Check environment for SGX compatibility</span></a> that checks the environment
+for SGX compatibility.
+Use this tool to check your hardware and system.
+It’s installed together with the respective gramine package you previously
+installed.</p>
 </div>
 <div class="section" id="prepare-a-signing-key">
 <h2>Prepare a signing key<a class="headerlink" href="#prepare-a-signing-key" title="Permalink to this headline">¶</a></h2>
 <p>Only for SGX, and if you haven’t already, enter the following:</p>
 <p>gramine-sgx-gen-private-key</p>
 <p>This command generates an RSA 3072 key suitable for signing SGX enclaves and
-stores it in :file: <cite>{HOME}/.config/gramine/enclave-key.pem</cite>.
+stores it in <code class="file docutils literal notranslate"><em><span class="pre">HOME</span></em><span class="pre">/.config/gramine/enclave-key.pem</span></code>.
 Protect this key and do not disclose it to anyone.</p>
 </div>
 </div>

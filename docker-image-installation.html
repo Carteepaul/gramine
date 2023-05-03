@@ -216,11 +216,10 @@ for your SGX applications.</p>
 <p>If you want to run <strong class="program">gramine-direct</strong> in addition to
 command:<cite>gramine-sgx</cite>, then you should run Docker with our custom seccomp
 profile using:</p>
-<blockquote>
-<div><code class="docutils literal notranslate"><span class="pre">--security-opt</span> <span class="pre">seccomp=&lt;profile_file&gt;</span></code></div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--security-opt</span> <span class="pre">seccomp=&lt;profile_file&gt;</span></code></p>
 <p>You can download the profile file from:</p>
 <p><a class="reference external" href="https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.json">https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.json</a>.</p>
-<p>Alternatively you can disable seccomp completely</p>
+<p>Alternatively you can disable seccomp completely:</p>
 <p><code class="docutils literal notranslate"><span class="pre">--security-optseccomp=unconfined</span></code></p>
 </div>
 

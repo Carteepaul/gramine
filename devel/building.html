@@ -238,11 +238,6 @@ tested on Ubuntu 18.04/20.04, along with Linux kernel version 5.x. We recommend
 building and installing Gramine on Ubuntu with Linux kernel version 5.11 or
 higher. If you find problems with Gramine on other Linux distributions,
 contact us with a&nbsp;detailed <a class="reference external" href="https://github.com/gramineproject/gramine/issues/new">bug report</a>.</p>
-<p><strong>Install from a Docker container</strong></p>
-<p>If you opt to build Gramine, you can install Gramine from a Docker container
-you build that includes an OS packaged with Gramine binaries.
-The container includes everything that’s included in the custom installation.
-You must create your own manifest. Go to <span class="xref std std-doc">docker-image-installation</span>.</p>
 <div class="section" id="install-dependencies">
 <h2>Install dependencies<a class="headerlink" href="#install-dependencies" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="common-dependencies">
@@ -500,15 +495,6 @@ take a long time: unfortunately, the only supported way of building
 <h2>Prepare a signing key<a class="headerlink" href="#prepare-a-signing-key" title="Permalink to this headline">¶</a></h2>
 <p>These instructions are only required for systems using Intel® SGX that have not
 already created a signing key.</p>
-<blockquote>
-<div><ul class="simple">
-<li>If your system is not using Intel® SGX, skip this step.</li>
-<li>If your system is using Intel® SGX and you already created a signing key,
-skip this step.</li>
-<li>If your system is using Intel® SGX and have not created a signing key,
-follow the instructions below.</li>
-</ul>
-</div></blockquote>
 <p>The following command generates an&nbsp;RSA 3072 key suitable for signing SGX
 enclaves and stores it in <code class="file docutils literal notranslate"><em><span class="pre">HOME</span></em><span class="pre">/.config/gramine/enclave-key.pem</span></code>.
 Protect this key and do not disclose it to anyone:</p>
