@@ -185,7 +185,7 @@ Indices and tables
    devel/features
    pal/host-abi
    python/api
-   manpages/manpages-index
+   manpages/index
    concepts-index
 
 
