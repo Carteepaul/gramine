@@ -125,7 +125,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Resources</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="management-team.html">Management Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management-team.html">Management Team (Maintainers)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gramine-users.html">Users of Gramine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
@@ -303,7 +303,7 @@ of the three mutually exclusive options:</p>
 <li>point <code class="docutils literal notranslate"><span class="pre">loader.argv_src_file</span></code> to a file
 containing output of <a class="reference internal" href="manpages/gramine-argv-serializer.html#gramine-argv-serializer"><span class="std std-ref">gramine-argv-serializer</span></a>.</li>
 </ul>
-<p>If none of the above arguments-handling manifest options are specified in the
+<p>If none of the above argument-handling manifest options are specified in the
 manifest, the application will get <code class="docutils literal notranslate"><span class="pre">argv</span> <span class="pre">=</span> <span class="pre">[</span> <span class="pre">&lt;libos.entrypoint</span> <span class="pre">value&gt;</span> <span class="pre">]</span></code>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">loader.argv_src_file</span></code> is intended to point to either a trusted file or an
 encrypted file. The former allows to securely hardcode arguments, the latter
@@ -1047,35 +1047,6 @@ independently.</p>
 </pre></div>
 </div>
 <p>This feature is now enabled by default and the option was removed.</p>
-</div>
-<div class="section" id="attestation-and-quotes-deprecated-syntax">
-<h3>Attestation and quotes (deprecated syntax)<a class="headerlink" href="#attestation-and-quotes-deprecated-syntax" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sgx.remote_attestation = [true|false]
-</pre></div>
-</div>
-<p>This syntax specified whether to enable SGX remote attestation. The boolean
-value has been replaced with the string value. The <code class="docutils literal notranslate"><span class="pre">none</span></code> value in the new
-syntax corresponds to the <code class="docutils literal notranslate"><span class="pre">false</span></code> boolean value in the deprecated syntax. The
-explicit <code class="docutils literal notranslate"><span class="pre">epid</span></code> and <code class="docutils literal notranslate"><span class="pre">dcap</span></code> values in the new syntax replace the ambiguous
-<code class="docutils literal notranslate"><span class="pre">true</span></code> boolean value in the deprecated syntax.</p>
-</div>
-<div class="section" id="gramine-internal-metadata-size-deprecated-syntax">
-<h3>Gramine internal metadata size (deprecated syntax)<a class="headerlink" href="#gramine-internal-metadata-size-deprecated-syntax" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>loader.pal_internal_mem_size = &quot;[SIZE]&quot;
-(default: &quot;0&quot;)
-</pre></div>
-</div>
-<p>This syntax specified how much additional memory Gramine used to reserve for its
-internal use (e.g., metadata for trusted files, internal handles,
-etc.). Currently Gramine correctly tracks all internal memory allocations and
-does not require this workaround.</p>
-</div>
-<div class="section" id="number-of-threads-deprecated-syntax">
-<h3>Number of threads (deprecated syntax)<a class="headerlink" href="#number-of-threads-deprecated-syntax" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sgx.thread_num = [NUM]
-</pre></div>
-</div>
-<p>This name was ambiguous and was replaced with <code class="docutils literal notranslate"><span class="pre">sgx.max_threads</span></code>.</p>
 </div>
 </div>
 </div>

@@ -131,7 +131,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Resources</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="management-team.html">Management Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management-team.html">Management Team (Maintainers)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gramine-users.html">Users of Gramine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
@@ -208,9 +208,10 @@
 <p>Gramine without SGX has no special requirements.</p>
 <p>Gramine with SGX support requires several features from your system:</p>
 <ul class="simple">
-<li>The FSGSBASE feature of recent processors must be enabled in the Linux kernel;</li>
-<li>The Intel SGX driver must be built in the Linux kernel;</li>
-<li>Intel SGX SDK/PSW and (optionally) Intel DCAP must be installed.</li>
+<li>The FSGSBASE feature of recent processors must be enabled in the Linux kernel.</li>
+<li>The Intel SGX driver must be built in the Linux kernel.</li>
+<li>The Intel PSW must be installed.</li>
+<li>The Intel DCAP must be installed if DCAP-based attestation should be used.</li>
 </ul>
 <p>If your system doesn’t meet these requirements, please refer to more detailed
 descriptions in <a class="reference internal" href="devel/building.html"><span class="doc">Build and install Gramine from source</span></a>.</p>
