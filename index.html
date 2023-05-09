@@ -40,7 +40,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Ready-made confidential protected images" href="curated-installation.html" /> 
+    <link rel="next" title="Gramine Shielded Containers" href="gsc-installation.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,13 +88,10 @@
               
             
             
-              <p class="caption"><span class="caption-text">Ready-made protected applications</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="curated-installation.html">Ready-made confidential protected images</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Protect your container</span></p>
+              <p class="caption"><span class="caption-text">Protect your container</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="gsc-installation.html">Gramine Shielded Containers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="curated-installation.html">Ready-made confidential protected images</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Protect your application</span></p>
 <ul>
@@ -214,25 +211,17 @@ sections.
 This page mimics the table of contents in the left column.</p>
 <div class="section" id="gramine-deployment-options">
 <h2>Gramine deployment options<a class="headerlink" href="#gramine-deployment-options" title="Permalink to this headline">¶</a></h2>
-<p>There are three deployment options for Gramine – each option has a dedicated
-section in the menu and an introduction is provided below.</p>
-<div class="section" id="ready-made-protected-applications">
-<h3>Ready-made protected applications<a class="headerlink" href="#ready-made-protected-applications" title="Permalink to this headline">¶</a></h3>
-<p>Confidential compute images are ready-made solutions for popular open source
-projects such as <a class="reference external" href="https://github.com/gramineproject/contrib/tree/master/Intel-Confidential-Compute-for-X/workloads/pytorch">PyTorch</a>
-and <a class="reference external" href="https://github.com/gramineproject/contrib/tree/master/Intel-Confidential-Compute-for-X/workloads/redis">Redis</a>.
-These images enable you to customize your environment through interactive
-scripts. The result is an image that includes your specific machine-learning
-application, common dependencies, and a manifest file.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">These confidential compute images only run on machines that support
-Intel SGX.</p>
-</div>
-<p>See the <a class="reference internal" href="curated-installation.html"><span class="doc">Ready-made confidential protected images</span></a> article for more information.</p>
-</div>
+<p>There are two deployment options for Gramine: protect your container and protect
+your application.
+Each option has a dedicated section in the menu and an introduction is provided
+below.</p>
 <div class="section" id="protect-your-container">
 <h3>Protect your container<a class="headerlink" href="#protect-your-container" title="Permalink to this headline">¶</a></h3>
+<p>In this section, we describe how you can protect your Docker container using
+Gramine Shielded Containers and how you can use ready-made solutions for popular
+open source projects.</p>
+<div class="section" id="gramine-shielded-containers">
+<h4>Gramine Shielded Containers<a class="headerlink" href="#gramine-shielded-containers" title="Permalink to this headline">¶</a></h4>
 <p>Docker images are used to run applications in the cloud.
 The Gramine Shielded Container tool transforms a Docker image into a graminized
 image that includes the Gramine Library OS and Intel SGX related information.
@@ -245,6 +234,23 @@ Build a Docker image that contains the Gramine functionality.</li>
 <li><a class="reference external" href="https://github.com/gramineproject/gsc">Download the Gramine Shielded Container tool</a> -
 Protect the Docker image containing the application you want to protect.</li>
 </ul>
+</div>
+<div class="section" id="ready-made-protected-applications">
+<h4>Ready-made protected applications<a class="headerlink" href="#ready-made-protected-applications" title="Permalink to this headline">¶</a></h4>
+<p>Confidential compute images are ready-made solutions for popular open source
+projects such as <a class="reference external" href="https://github.com/gramineproject/contrib/tree/master/Intel-Confidential-Compute-for-X/workloads/pytorch">PyTorch</a>
+and <a class="reference external" href="https://github.com/gramineproject/contrib/tree/master/Intel-Confidential-Compute-for-X/workloads/redis">Redis</a>.
+These images enable you to customize your environment through interactive
+scripts.
+The result is an image that includes your specific machine-learning
+application, common dependencies, and a manifest file.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These confidential compute images only run on machines that support
+Intel SGX.</p>
+</div>
+<p>See the <a class="reference internal" href="curated-installation.html"><span class="doc">Ready-made confidential protected images</span></a> article for more information.</p>
+</div>
 </div>
 <div class="section" id="protect-your-application">
 <h3>Protect your application<a class="headerlink" href="#protect-your-application" title="Permalink to this headline">¶</a></h3>
@@ -340,8 +346,6 @@ or join us on our <a class="reference external" href="https://gitter.im/graminep
 </div>
 <div class="toctree-wrapper compound">
 </div>
-<div class="toctree-wrapper compound">
-</div>
 </div>
 </div>
 
@@ -352,7 +356,7 @@ or join us on our <a class="reference external" href="https://gitter.im/graminep
 
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="curated-installation.html" class="btn btn-neutral float-right" title="Ready-made confidential protected images" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="gsc-installation.html" class="btn btn-neutral float-right" title="Gramine Shielded Containers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
