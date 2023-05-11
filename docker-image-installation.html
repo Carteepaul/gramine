@@ -208,17 +208,21 @@ for your SGX applications.</p>
 <p>The Gramine team publishes a base Gramine Docker image at:
 <a class="reference external" href="https://hub.docker.com/r/gramineproject/gramine">DockerHub</a>.</p>
 <p>To run the Gramine image via Docker, the recommended command is:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>``docker run --device /dev/sgx_enclave -it gramineproject/gramine``
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="o">--</span><span class="n">device</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sgx_enclave</span><span class="w"> </span><span class="o">-</span><span class="n">it</span><span class="w"> </span><span class="n">gramineproject</span><span class="o">/</span><span class="n">gramine</span><span class="w"></span>
 </pre></div>
 </div>
 <p>If you want to run <strong class="program">gramine-direct</strong> in addition to
 command:<cite>gramine-sgx</cite>, then you should run Docker with our custom seccomp
 profile using:</p>
-<p><code class="docutils literal notranslate"><span class="pre">--security-opt</span> <span class="pre">seccomp=&lt;profile_file&gt;</span></code></p>
-<p>You can download the profile file from:</p>
-<p><a class="reference external" href="https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.json">https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.json</a>.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">security</span><span class="o">-</span><span class="n">opt</span><span class="w"> </span><span class="n">seccomp</span><span class="o">=&lt;</span><span class="n">profile_file</span><span class="o">&gt;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>You can download the profile file from:
+<a class="reference external" href="https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.json">https://github.com/gramineproject/gramine/blob/master/scripts/docker_seccomp.json</a>.</p>
 <p>Alternatively you can disable seccomp completely:</p>
-<p><code class="docutils literal notranslate"><span class="pre">--security-optseccomp=unconfined</span></code></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">security</span><span class="o">-</span><span class="n">optseccomp</span><span class="o">=</span><span class="n">unconfined</span><span class="w"></span>
+</pre></div>
+</div>
 </div>
 
 
